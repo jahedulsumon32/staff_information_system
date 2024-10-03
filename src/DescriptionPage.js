@@ -4,7 +4,8 @@ import axios from 'axios';
 import "./css/description.css";
 import { WorklistContext } from './WorklistContext';
 
-const token = process.env.REACT_APP_SESSION_TOKEN;
+// const token = process.env.REACT_APP_SESSION_TOKEN;
+const token = localStorage.getItem('authToken');
 
 const DescriptionPage = () => {
   const { id } = useParams();

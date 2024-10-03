@@ -3,8 +3,9 @@ import "./css/AssignTask.css";
 import "./css/card.css";
 import axios from "axios";
 
-const token = process.env.REACT_APP_SESSION_TOKEN;
+// const token = process.env.REACT_APP_SESSION_TOKEN;
 // const apiUrl = process.env.REACT_APP_API_URL;
+const token = localStorage.getItem('authToken');
 const Modal = ({ message, onClose }) => {
   return (
     <div className="modal2">

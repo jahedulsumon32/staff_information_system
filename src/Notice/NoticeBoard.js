@@ -68,9 +68,20 @@ import "../css/noticeboard.css";
 //     fileUrl: "#",
 //   },
 // ];
-const token=process.env.REACT_APP_SESSION_TOKEN;
+// const token=process.env.REACT_APP_SESSION_TOKEN;
+const token = localStorage.getItem('authToken');
+
 console.log(token)
 const NoticeBoard = () => {
+  // const [authToken, setAuthToken] = useState(localStorage.getItem('authToken'));
+
+  // useEffect(() => {
+  //   const token = localStorage.getItem('authToken');
+  //   if (token) {
+  //     setAuthToken(token);
+  //   }
+  // }, []);
+
   const [noticeData, setNoticeData] = useState({
     notice_title: "",
     notice_type: "",

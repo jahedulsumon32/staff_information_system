@@ -10,6 +10,7 @@ import {
   faTasks,
   faList,
   faAddressCard,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./css/sidebar.css";
 
@@ -72,6 +73,14 @@ const Sidebar = () => {
               {isOpen && "About"}
             </Link>
           </li>
+
+          <li className={location.pathname === "/login" ? "active" : ""}>
+            <Link to="/login">
+              <FontAwesomeIcon icon={faUser} className="icon" />{" "}
+              {isOpen && "Login"}
+            </Link>
+          </li>
+
         </ul>
       </div>
     </div>

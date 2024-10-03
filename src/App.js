@@ -19,6 +19,7 @@ import EEE from "./EEE";
 import { WorklistProvider } from "./WorklistContext";
 import DescriptionPage from "./DescriptionPage";
 import Information from "./Information";
+import LoginPage from "./LoginPage";
 import ExamController from "./ExamController";
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
           <Sidebar />
           <Switch>
             <Route path="/" exact component={Information} />
+            <Route path="/login" exact component={LoginPage} />
+
             <Route path="/noticeboard" exact component={NoticeBoard} />
             <Route path="/assigncourse" exact component={AssignCourse} />
             <Route path="/assigntask" exact component={AssignTask} />
